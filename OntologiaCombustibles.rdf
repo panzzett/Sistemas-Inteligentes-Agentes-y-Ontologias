@@ -1,0 +1,813 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2/"
+     xml:base="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-2="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#ofreceCombustible -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#ofreceCombustible">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#EstacionServicio"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Combustible"/>
+        <rdfs:comment xml:lang="es">Relaciona una estación de servicio con los tipos de combustible que ofrece.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#operadaPor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#operadaPor">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#EstacionServicio"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Operador"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#tieneComunidadAutonoma -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#tieneComunidadAutonoma">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Localizacion"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#ComunidadAutonoma"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#tieneCoordenadas -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#tieneCoordenadas">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Localizacion"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Coordenadas"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#tieneDireccion -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#tieneDireccion">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Localidad"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Direccion"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#tieneHorario -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#tieneHorario">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#EstacionServicio"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Horario"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#tieneLocalidad -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#tieneLocalidad">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Municipio"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Localidad"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#tieneLocalizacion -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#tieneLocalizacion">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#EstacionServicio"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Localizacion"/>
+        <rdfs:comment xml:lang="es">Relaciona una estación de servicio con su ubicación geográfica</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#tieneMargen -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#tieneMargen">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Localizacion"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Margen"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#tieneMunicipio -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#tieneMunicipio">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Provincia"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Municipio"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#tienePrecio -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#tienePrecio">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#EstacionServicio"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Precio"/>
+        <rdfs:comment xml:lang="es">Relaciona una estación de servicio con los precios de los combustibles que publica.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#tienePrecioCombustible -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#tienePrecioCombustible">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Precio"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Combustible"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#tieneProvincia -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#tieneProvincia">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#ComunidadAutonoma"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Provincia"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#codigoPostal -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#codigoPostal">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Direccion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#direccion -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#direccion">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Direccion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#horario -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#horario">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Horario"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#id">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#EstacionServicio"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#latitud -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#latitud">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Coordenadas"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment xml:lang="es">Valor numérico que indica la posición geográfica en el eje norte-sur</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#longitud -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#longitud">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Coordenadas"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment xml:lang="es">Valor numérico que indica la posición geográfica en el eje este-oeste</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#margen -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#margen">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Margen"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#nombre -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#nombre">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#ComunidadAutonoma"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Localidad"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Municipio"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Provincia"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#operador -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#operador">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Operador"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#precioCombustible -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#precioCombustible">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Precio"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment xml:lang="es">Valor numérico que indica el coste del combustible.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#rotulo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#rotulo">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#EstacionServicio"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#tipoCombustible -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#tipoCombustible">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Combustible"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topDataProperty -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topDataProperty">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Operador"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Combustible -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Combustible">
+        <rdfs:comment xml:lang="es">Tipo de producto ofrecido por una estación de servicio, como gasolina o gasóleo.</rdfs:comment>
+        <rdfs:label xml:lang="es">Combustible</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#ComunidadAutonoma -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#ComunidadAutonoma">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Localizacion"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Localidad"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Municipio"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Provincia"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Coordenadas -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Coordenadas">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Localizacion"/>
+        <rdfs:comment xml:lang="es">Par de valores numéricos (latitud y longitud) que indican la posición geográfica de una estación de servicio.</rdfs:comment>
+        <rdfs:label xml:lang="es">Coordenadas</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Direccion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Direccion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Localizacion"/>
+        <rdfs:comment xml:lang="es">Texto descriptivo que identifica la ubicación física de una estación de servicio dentro de una localidad.</rdfs:comment>
+        <rdfs:label xml:lang="es">Dirección</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#EstacionServicio -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#EstacionServicio">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#tienePrecio"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Precio"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#operadaPor"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Operador"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#tieneHorario"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Horario"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#tieneLocalizacion"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Localizacion"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="es">Instalación donde se venden combustibles y se publican precios, junto con información de ubicación, horario y operador.</rdfs:comment>
+        <rdfs:label xml:lang="es">Estación de Servicio</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Horario -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Horario">
+        <rdfs:comment xml:lang="es">Información que describe los períodos de apertura y cierre de una estación de servicio.</rdfs:comment>
+        <rdfs:label xml:lang="es">Horario</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Localidad -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Localidad">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Localizacion"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Municipio"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Provincia"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Localizacion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Localizacion">
+        <rdfs:comment xml:lang="es">Información geográfica que describe la ubicación de una estación de servicio.</rdfs:comment>
+        <rdfs:label xml:lang="es">Localización</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Margen -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Margen">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Localizacion"/>
+        <rdfs:comment xml:lang="es">Margen de la vía al que se encuentra la estación de servicio (D: Derecho, I: Izquierdo, N: No aplica)</rdfs:comment>
+        <rdfs:label xml:lang="es">Margen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Municipio -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Municipio">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Localizacion"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Provincia"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Operador -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Operador">
+        <rdfs:comment xml:lang="es">Entidad responsable de la gestión y explotación de una estación de servicio.</rdfs:comment>
+        <rdfs:label xml:lang="es">Operador</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Precio -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Precio">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#tienePrecioCombustible"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Precio"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#precioCombustible"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="es">Valor económico asociado a un determinado combustible en una estación de servicio.</rdfs:comment>
+        <rdfs:label xml:lang="es">Precio</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Provincia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Provincia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Localizacion"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#CA_01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#CA_01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#ComunidadAutonoma"/>
+        <untitled-ontology-2:tieneProvincia rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Prov_01"/>
+        <untitled-ontology-2:nombre>Andalucía</untitled-ontology-2:nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#CA_02 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#CA_02">
+        <rdf:type rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#ComunidadAutonoma"/>
+        <untitled-ontology-2:tieneProvincia rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Prov_02"/>
+        <untitled-ontology-2:nombre>Madrid</untitled-ontology-2:nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Comb_G95 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Comb_G95">
+        <rdf:type rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Combustible"/>
+        <untitled-ontology-2:tipoCombustible>Gasolina 95</untitled-ontology-2:tipoCombustible>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Comb_G98 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Comb_G98">
+        <rdf:type rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Combustible"/>
+        <untitled-ontology-2:tipoCombustible>Gasolina 98</untitled-ontology-2:tipoCombustible>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Comb_GA -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Comb_GA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Combustible"/>
+        <untitled-ontology-2:tipoCombustible>Gasóleo A</untitled-ontology-2:tipoCombustible>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Coord_01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Coord_01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Coordenadas"/>
+        <untitled-ontology-2:latitud rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">37.144389</untitled-ontology-2:latitud>
+        <untitled-ontology-2:longitud rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-3.604972</untitled-ontology-2:longitud>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Coord_02 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Coord_02">
+        <rdf:type rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Coordenadas"/>
+        <untitled-ontology-2:latitud rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">40.456694</untitled-ontology-2:latitud>
+        <untitled-ontology-2:longitud rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-3.465056</untitled-ontology-2:longitud>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Dir_01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Dir_01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Direccion"/>
+        <untitled-ontology-2:codigoPostal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">18007</untitled-ontology-2:codigoPostal>
+        <untitled-ontology-2:direccion>AVENIDA DEL CONOCIMIENTO 1</untitled-ontology-2:direccion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Dir_02 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Dir_02">
+        <rdf:type rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Direccion"/>
+        <untitled-ontology-2:codigoPostal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">28850</untitled-ontology-2:codigoPostal>
+        <untitled-ontology-2:direccion>AVENIDA DE LAS FRONTERAS S/N</untitled-ontology-2:direccion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Estacion_01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Estacion_01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#EstacionServicio"/>
+        <untitled-ontology-2:ofreceCombustible rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Comb_G95"/>
+        <untitled-ontology-2:ofreceCombustible rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Comb_G98"/>
+        <untitled-ontology-2:ofreceCombustible rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Comb_GA"/>
+        <untitled-ontology-2:operadaPor rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Oper_01"/>
+        <untitled-ontology-2:tieneHorario rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Hor_01"/>
+        <untitled-ontology-2:tieneLocalizacion rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Loc_01"/>
+        <untitled-ontology-2:tienePrecio rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Prec_G95_01"/>
+        <untitled-ontology-2:tienePrecio rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Prec_G98_01"/>
+        <untitled-ontology-2:tienePrecio rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Prec_GA_01"/>
+        <untitled-ontology-2:id rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12355</untitled-ontology-2:id>
+        <untitled-ontology-2:rotulo>SHELL</untitled-ontology-2:rotulo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Estacion_02 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Estacion_02">
+        <rdf:type rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#EstacionServicio"/>
+        <untitled-ontology-2:ofreceCombustible rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Comb_G95"/>
+        <untitled-ontology-2:ofreceCombustible rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Comb_G98"/>
+        <untitled-ontology-2:ofreceCombustible rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Comb_GA"/>
+        <untitled-ontology-2:operadaPor rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Oper_02"/>
+        <untitled-ontology-2:tieneHorario rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Hor_02"/>
+        <untitled-ontology-2:tieneLocalizacion rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Loc_02"/>
+        <untitled-ontology-2:tienePrecio rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Prec_G95_02"/>
+        <untitled-ontology-2:tienePrecio rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Prec_G98_02"/>
+        <untitled-ontology-2:tienePrecio rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Prec_GA_02"/>
+        <untitled-ontology-2:id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3149</untitled-ontology-2:id>
+        <untitled-ontology-2:rotulo>BP TORREJON - AV FRONTERAS</untitled-ontology-2:rotulo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Hor_01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Hor_01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Horario"/>
+        <untitled-ontology-2:horario>L-D: 24H</untitled-ontology-2:horario>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Hor_02 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Hor_02">
+        <rdf:type rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Horario"/>
+        <untitled-ontology-2:horario>L-D: 24H</untitled-ontology-2:horario>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Loc_01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Loc_01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Localizacion"/>
+        <untitled-ontology-2:tieneComunidadAutonoma rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#CA_01"/>
+        <untitled-ontology-2:tieneCoordenadas rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Coord_01"/>
+        <untitled-ontology-2:tieneMargen rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Marg_01"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Loc_02 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Loc_02">
+        <rdf:type rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Localizacion"/>
+        <untitled-ontology-2:tieneComunidadAutonoma rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#CA_02"/>
+        <untitled-ontology-2:tieneCoordenadas rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Coord_02"/>
+        <untitled-ontology-2:tieneMargen rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Marg_02"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Local_01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Local_01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Localidad"/>
+        <untitled-ontology-2:tieneDireccion rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Dir_01"/>
+        <untitled-ontology-2:nombre>Granada</untitled-ontology-2:nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Local_02 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Local_02">
+        <rdf:type rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Localidad"/>
+        <untitled-ontology-2:tieneDireccion rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Dir_02"/>
+        <untitled-ontology-2:nombre>Torrejón de Ardoz</untitled-ontology-2:nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Marg_01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Marg_01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Margen"/>
+        <untitled-ontology-2:margen>N</untitled-ontology-2:margen>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Marg_02 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Marg_02">
+        <rdf:type rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Margen"/>
+        <untitled-ontology-2:margen>I</untitled-ontology-2:margen>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Mun_01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Mun_01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Municipio"/>
+        <untitled-ontology-2:tieneLocalidad rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Local_01"/>
+        <untitled-ontology-2:nombre>Granada</untitled-ontology-2:nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Mun_02 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Mun_02">
+        <rdf:type rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Municipio"/>
+        <untitled-ontology-2:tieneLocalidad rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Local_02"/>
+        <untitled-ontology-2:nombre>Torrejón de Ardoz</untitled-ontology-2:nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Oper_01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Oper_01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Operador"/>
+        <untitled-ontology-2:operador>DISA PENINSULA S.L.U</untitled-ontology-2:operador>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Oper_02 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Oper_02">
+        <rdf:type rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Operador"/>
+        <untitled-ontology-2:operador>BP OIL ESPAÑA S.A.U.</untitled-ontology-2:operador>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Prec_G95_01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Prec_G95_01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Precio"/>
+        <untitled-ontology-2:tienePrecioCombustible rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Comb_G95"/>
+        <untitled-ontology-2:precioCombustible rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.469</untitled-ontology-2:precioCombustible>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Prec_G95_02 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Prec_G95_02">
+        <rdf:type rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Precio"/>
+        <untitled-ontology-2:tienePrecioCombustible rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Comb_G95"/>
+        <untitled-ontology-2:precioCombustible rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.525</untitled-ontology-2:precioCombustible>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Prec_G98_01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Prec_G98_01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Precio"/>
+        <untitled-ontology-2:tienePrecioCombustible rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Comb_G98"/>
+        <untitled-ontology-2:precioCombustible rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.569</untitled-ontology-2:precioCombustible>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Prec_G98_02 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Prec_G98_02">
+        <rdf:type rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Precio"/>
+        <untitled-ontology-2:tienePrecioCombustible rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Comb_G98"/>
+        <untitled-ontology-2:precioCombustible rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.655</untitled-ontology-2:precioCombustible>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Prec_GA_01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Prec_GA_01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Precio"/>
+        <untitled-ontology-2:tienePrecioCombustible rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Comb_GA"/>
+        <untitled-ontology-2:precioCombustible rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.409</untitled-ontology-2:precioCombustible>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Prec_GA_02 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Prec_GA_02">
+        <rdf:type rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Precio"/>
+        <untitled-ontology-2:tienePrecioCombustible rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Comb_GA"/>
+        <untitled-ontology-2:precioCombustible rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.475</untitled-ontology-2:precioCombustible>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Prov_01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Prov_01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Provincia"/>
+        <untitled-ontology-2:tieneMunicipio rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Mun_01"/>
+        <untitled-ontology-2:nombre>Granada</untitled-ontology-2:nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Prov_02 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Prov_02">
+        <rdf:type rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Provincia"/>
+        <untitled-ontology-2:tieneMunicipio rdf:resource="http://www.semanticweb.org/julio/ontologies/2026/0/untitled-ontology-2#Mun_02"/>
+        <untitled-ontology-2:nombre>Madrid</untitled-ontology-2:nombre>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
